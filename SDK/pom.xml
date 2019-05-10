@@ -14,8 +14,8 @@
     <dependencies>
         <dependency>
             <groupId>com.github.jadeleeuw</groupId>
-            <artifactId>sdk-railways</artifactId>
-            <version>0.1</version>
+            <artifactId>TE-jitpack-evolution</artifactId>
+            <version>v2.3</version>
         </dependency>
 
         <dependency>
