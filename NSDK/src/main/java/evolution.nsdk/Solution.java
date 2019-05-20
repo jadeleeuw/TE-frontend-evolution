@@ -25,12 +25,14 @@ public class Solution {
     private StationAPI stationApi;
     private RailwayAPI railwayApi;
     private DistanceAPI distanceApi;
-
+    
+    private final int ID_KEY = ;
+    
     public Solution() {
-        taskApi = new TaskAPI(961270782);
-        stationApi = new StationAPI(961270782);
-        railwayApi = new RailwayAPI(961270782);
-        distanceApi = new DistanceAPI(961270782);
+        taskApi = new TaskAPI(ID_KEY);
+        stationApi = new StationAPI(ID_KEY);
+        railwayApi = new RailwayAPI(ID_KEY);
+        distanceApi = new DistanceAPI(ID_KEY);
     }
 
 
