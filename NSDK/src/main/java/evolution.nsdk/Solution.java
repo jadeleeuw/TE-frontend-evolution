@@ -101,7 +101,14 @@ public class Solution {
         System.out.println("Shortest path by station name: " + shortestPath.getT1().getStationsToSwitchTrain().stream().map(stationApi::getStationName).map(r -> r.block().getName()).collect(Collectors.toList()));
         System.out.println("Distance: " + shortestPath.getT2() + " meters.");
     }
-
+    
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        s.unirestSerializerSetup();
+        s.solve();
+    }
+    
+    // This initializes Unirest, making (de)serialization of objects possible. You don't have to touch this.
     private void unirestSerializerSetup() {
         Unirest.setObjectMapper(new ObjectMapper() {
             private com.fasterxml.jackson.databind.ObjectMapper jacksonObjectMapper
@@ -123,11 +130,5 @@ public class Solution {
                 }
             }
         });
-    }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        s.unirestSerializerSetup();
-        s.solve();
     }
 }
