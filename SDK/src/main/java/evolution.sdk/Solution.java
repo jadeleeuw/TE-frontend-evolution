@@ -20,10 +20,12 @@ public class Solution {
     private RailwayApi railwayApi;
     private TaskApi taskApi;
     private DistanceApi distanceApi;
+    
+    private final int ID_KEY = ;
 
     public Solution() {
         ApiClient client = new ApiClient();
-        client.setApiKey(String.valueOf(961270782));
+        client.setApiKey(String.valueOf(ID_KEY));
 
         this.stationApi = new StationApi(client);
         this.railwayApi = new RailwayApi(client);
