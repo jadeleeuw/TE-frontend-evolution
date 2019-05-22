@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.github.jadeleeuw</groupId>
             <artifactId>TE-jitpack-evolution</artifactId>
-            <version>v2.3</version>
+            <version>v2.5</version>
         </dependency>
 
         <dependency>
